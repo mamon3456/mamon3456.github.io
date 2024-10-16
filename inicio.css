@@ -1,0 +1,101 @@
+/* Estilos para el h1 */
+.blue-background {
+    background-color: blue; /* Color de fondo azul */
+    color: white;           /* Texto blanco para mejor contraste */
+    padding: 20px;          /* Espaciado interno */
+    text-align: center;     /* Centrar el texto */
+    border-radius: 10px;    /* Bordes redondeados (opcional) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor de contenido para simular otros elementos en la página */
+.content-container {
+    padding: 100px;
+    background-color: #f4f4f4;
+    margin-top: 50px;
+}
+
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px;
+    padding: 10px;
+    position: fixed;
+    top: 5%;         /* Cambia el porcentaje para ajustarlo más arriba o abajo */
+    left: 10px;       /* Ajusta desde la izquierda */
+    transform: translateY(-50%); /* Este transform ayuda a centrar el ícono */
+    z-index: 1000;    /* Asegura que esté por encima del contenido */
+}
+
+
+.bar {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Menú lateral */
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 999;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 8px 32px;
+    text-align: left;
+}
+
+.side-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu ul li a:hover {
+    color: #f1f1f1;
+}
+
+/* Menú cuando está abierto */
+.side-menu.open {
+    width: 250px;
+}
+
+/* Cambios en el ícono del menú al abrir */
+.menu-icon.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px);
+}

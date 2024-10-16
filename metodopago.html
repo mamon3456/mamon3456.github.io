@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Producto</title>
+    <link rel="stylesheet" href="metodopago.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Compra de Producto</h1>
+        <form id="purchase-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" required>
+
+            <label for="surname">Apellido:</label>
+            <input type="text" id="surname" required> 
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" required>
+            
+            <label for="quantity">Cantidad:</label>
+            <input type="number" id="quantity" min="1" value="1" required>
+            
+            <label for="payment-method">Método de Pago:</label>
+            <select id="payment-method" required>
+                <option value="">Seleccione un método</option>
+                <option value="mercado-pago">Mercado Pago</option>
+                <option value="tarjeta-debito">Tarjeta de Débito</option>
+                <option value="tarjeta-credito">Tarjeta de Crédito</option>
+                <option value="transferencia-bancaria">Transferencia Bancaria</option>
+                <option value="efectivo">Efectivo</option>
+                <option value="monedas-digitales">Monedas Digitales</option>
+            </select>
+
+            <div id="mercado-pago-info" class="payment-info hidden">
+                <label for="cbu">CBU:26372819192093828</label>
+               
+                <button type="button" id="go-to-mercado-pago">Ir a Mercado Pago</button>
+            </div>
+
+            <div id="tarjeta-info" class="payment-info hidden">
+                <label for="card-number">Número de Tarjeta:</label>
+                <input type="text" id="card-number" placeholder="Ingrese el número de tarjeta">
+                
+                <label for="card-password">Contraseña:</label>
+                <input type="password" id="card-password" placeholder="Ingrese la contraseña">
+                
+                <label for="expiry-date">Fecha de Vencimiento:</label>
+                <input type="text" id="expiry-date" placeholder="MM/AA">
+            </div>
+
+            <div id="monedas-info" class="payment-info hidden">
+                <label for="cryptocurrency">Selecciona la moneda:</label>
+                <select id="cryptocurrency">
+                    <option value="bitcoin">Bitcoin</option>
+                    <option value="ethereum">Ethereum</option>
+                    <option value="litecoin">Litecoin</option>
+                </select>
+            </div>
+
+            <button type="submit">Oficializar Compra</button>
+        </form>
+        <p id="status"></p>
+        <div id="delivery-info" class="hidden">
+            <button id="check-delivery" class="hidden">¿Cuándo llega?</button>
+            <div id="delivery-animation" class="hidden">
+                <img src="https://i.imgur.com/rp1EDgQ.gif" alt="Camión de entrega" id="truck-animation">
+                <p id="delivery-message"></p>
+            </div>
+        </div>
+    </div>
+    <script src="metododepago.js"></script>
+</body>
+</html>
+
+

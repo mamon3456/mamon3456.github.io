@@ -1,0 +1,71 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+button {
+    padding: 10px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f5f;
+}
+
+/* Estilo del recuadro de la cámara */
+#video {
+    background-color: black;
+    display: block;
+    width: 1200px;
+    height: 480px;
+    border: 2px solid #333;
+}
+
+#alarm-status {
+    font-weight: bold;
+    color: red;
+}
+
+#llamarPolicia {
+    background-color: red;
+}
+
+#device-form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label, input, select {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+}
+

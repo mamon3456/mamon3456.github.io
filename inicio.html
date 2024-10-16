@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerradura Eléctrica en Arduino</title>
+    
+    <link rel="stylesheet" href="inicio.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .options {
+            background-color: transparent;
+            padding: 0;
+            margin: 10px 0 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .options a {
+            text-decoration: none;
+            background-color: #28a745;
+            color: white;
+            padding: 8px 16px;
+            margin: 0;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+
+        .options a:hover {
+            background-color: #218838;
+        }
+
+        .container {
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .product-info h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .product-info p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        .product-info ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .product-info ul li {
+            background-color: #e9ecef;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .options a {
+                padding: 6px 12px;
+                font-size: 0.8em;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="blue-background">cerradura Electrónica</h1>
+
+      
+      <div class="menu-icon" id="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    
+    <nav id="side-menu" class="side-menu">
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="productos.html">producto</a></li>
+            <li><a href="consulta.html">consultas</a></li>
+            <li><a href="abrirycerrar.html">cerradura</a></li>
+            <li><a href="https://locktech.freeflarum.com" >foro</a></li>
+            <li><a href="redessociales.html">redes sociales</a></li>
+            <li><a href="agregar.html">agregar</a></li>
+            <li><a href="perfil.html">perfil</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="product-info">
+            <h2>Beneficios de nuestras cerraduras eléctricas</h2>
+            <p>
+                Nuestras cerraduras eléctricas controladas con Arduino ofrecen una solución avanzada y segura para el control de acceso en hogares y oficinas. A continuación, te mostramos algunos de sus beneficios:
+            </p>
+            <ul>
+                <li>Automatización total mediante programación con Arduino.</li>
+                <li>Acceso mediante panel numérico o tarjeta RFID.</li>
+                <li>Seguridad avanzada con códigos temporales y permanentes.</li>
+                <li>Fácil instalación y mantenimiento bajo costo.</li>
+                <li>funcionamiento 24hs</li>
+                <li>Compatible con diferentes perifericos de seguridad</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Cerraduras. Todos los derechos reservados.</p>
+    </footer>
+    <script src="inicio.js"></script>
+
+</body>
+</html>

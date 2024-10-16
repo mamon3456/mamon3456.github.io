@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agregar.css">
+    <title>Control de Seguridad</title>
+</head>
+<body>
+    <header>
+        <h1>Control de Seguridad</h1>
+    </header>
+    
+    <main>
+        <section id="camera-section">
+            <h2>Cámara</h2>
+            <div>
+                <label for="camera-mode">Selecciona Modo:</label>
+                <select id="camera-mode">
+                    <option value="" disabled selected>Elige una opción</option>
+                    <option value="host">Host</option>
+                    <option value="reproductor">Reproductor</option>
+                </select>
+            </div>
+            <button id="start-camera" style="display:none;">Iniciar Cámara</button>
+            <button id="stop-camera" style="display:none;">Finalizar Cámara</button>
+            <video id="video" width="640" height="480" autoplay></video>
+        </section>
+        
+        <section id="microphone-section">
+            <h2>Micrófono</h2>
+            <div>
+                <label for="mic-mode">Selecciona Modo:</label>
+                <select id="mic-mode">
+                    <option value="" disabled selected>Elige una opción</option>
+                    <option value="host">Host</option>
+                    <option value="reproductor">Reproductor</option>
+                </select>
+            </div>
+            <button id="start-microphone" style="display:none;">Iniciar Micrófono</button>
+            <button id="stop-microphone" style="display:none;">Finalizar Micrófono</button>
+            <button id="save-recording" style="display:none;">Guardar Grabación</button>
+            <audio id="audio" controls></audio>
+        </section>
+        
+        <section id="alarm-section">
+            <h2>Alarmas</h2>
+            <button id="activate-alarm">Activar Alarma</button>
+            <p id="alarm-status">Estado: Inactiva</p>
+            <button id="llamarPolicia" style="display:none;">Llamar a la Policía</button>
+        </section>
+        
+        <section id="bluetooth-section">
+            <h2>Vincular Dispositivos Bluetooth o Wi-Fi</h2>
+            <button id="add-device">Agregar Dispositivo</button>
+            <ul id="device-list"></ul>
+
+            <!-- Formulario para agregar un dispositivo -->
+            <div id="device-form" style="display: none;">
+                <h3>Agregar Dispositivo</h3>
+                <form id="form-device">
+                    <label for="device-name">Nombre del Producto:</label>
+                    <input type="text" id="device-name" required>
+                    <br>
+                    <label for="device-date">Fecha de Fabricación:</label>
+                    <input type="date" id="device-date" required>
+                    <br>
+                    <label for="device-description">Descripción del Producto:</label>
+                    <input type="text" id="device-description" required>
+                    <br>
+                    <label for="device-alias">Alias (Opcional):</label>
+                    <input type="text" id="device-alias">
+                    <br>
+                    <label for="connection-method">Método de Vinculación:</label>
+                    <select id="connection-method" required>
+                        <option value="wifi">Wi-Fi</option>
+                        <option value="bluetooth">Bluetooth</option>
+                    </select>
+                    <br>
+                    <button type="submit">Vincular Dispositivo</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="agregar.js"></script>
+</body>
+</html>

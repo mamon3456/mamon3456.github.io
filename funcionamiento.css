@@ -1,0 +1,149 @@
+.blue-background {
+    background-color: blue; /* Color de fondo azul */
+    color: white;           /* Texto blanco para mejor contraste */
+    padding: 20px;          /* Espaciado interno */
+    text-align: center;     /* Centrar el texto */
+    border-radius: 10px;    /* Bordes redondeados (opcional) */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#status {
+    margin-top: 10px;
+    font-size: 18px;
+}
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos del ícono del menú hamburguesa */
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px;
+    padding: 10px;
+    position: fixed;
+    top: 50%;        /* Centrado verticalmente */
+    left: 20px;      /* Ajustar desde la izquierda */
+    transform: translateY(-50%); /* Centrado perfecto */
+    z-index: 1000;   /* Asegura que esté por encima del menú lateral */
+}
+
+.bar {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Estilos del ícono del menú hamburguesa */
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0px;
+    padding: 20px;
+    position: fixed;  /* Para mantenerlo fijo mientras te desplazas */
+    top: 50%;         /* Centrado verticalmente */
+    left: 20px;       /* Ajusta según lo que necesites para colocarlo desde la izquierda */
+    transform: translateY(-50%); /* Ajuste para centrarlo completamente */
+    z-index: 1000;    /* Asegura que esté por encima del menú lateral */
+}
+
+/* Menú lateral */
+.side-menu {
+    height: 100%;            /* Ocupa el 100% de la pantalla vertical */
+    width: 0;                /* Inicialmente oculto */
+    position: fixed;         /* Fijo en la posición */
+    top: 0;                  /* Inicia desde arriba */
+    left: 0;                 /* Inicia desde la izquierda */
+    background-color: #111;  /* Color de fondo oscuro */
+    overflow-x: hidden;      /* Evita el desbordamiento horizontal */
+    transition: 0.5s;        /* Transición suave */
+    padding-top: 60px;       /* Espacio superior del menú */
+    z-index: 999;            /* Menor que el icono para que se superponga el ícono */
+}
+
+/* Menú cuando está abierto */
+.side-menu.open {
+    width: 250px;            /* Ancho del menú cuando está abierto */
+}
+
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 8px 32px;
+    text-align: left;
+}
+
+.side-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu ul li a:hover {
+    color: #f1f1f1;
+}
+
+/* Menú cuando está abierto */
+.side-menu.open {
+    width: 250px;
+}
+
+/* Cambios en el ícono del menú al abrir */
+.menu-icon.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px);
+}

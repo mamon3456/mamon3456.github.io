@@ -1,0 +1,78 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.hidden {
+    display: none; /* Ocultar elementos */
+}
+
+.payment-info {
+    margin: 20px 0; /* Espaciado entre secciones de pago */
+}
+
+#status {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    position: relative; /* Para posicionar los globos */
+}
+
+#delivery-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#delivery-animation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#truck-animation {
+    width: 100px; /* Ajusta el tamaño del camión */
+    margin: 10px 0;
+}
